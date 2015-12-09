@@ -15,10 +15,19 @@ module.exports = function( scriptsDirName ) {
 function updateWidgets( scriptsDirName ) {
     var fs = require( 'fs' ),
         path = require( 'path' ),
-
         widgets = getDirs( scriptsDirName + '/widgets' );
 
     if ( widgets.length === 0 ) {
+        var mkdirSync = function (path) {
+            try {
+                fs.mkdirSync(path);
+            } catch(e) {
+                if ( e.code != 'EEXIST' ){ throw e; }
+            }
+        };
+
+        mkdirSync(scriptsDirName + '/widgets' );
+
         fs.writeFileSync( path.normalize(scriptsDirName+'/widgets/__main.js'), '' );
         return;
     }

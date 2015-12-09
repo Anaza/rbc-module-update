@@ -1,7 +1,7 @@
 {
   "name": "rbc-module-update",
   "description": "Update pages and widgets dependencies for browserify.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "homepage": "https://github.com/Anaza/rbc-module-update",
   "author": {
     "name": "clexit, Anaza"
@@ -29,6 +29,6 @@
   ],
   "readme": "#rbc-module-update\n\nTakes paths.scripts.src path, checks for `widgets` dependencies and generates `__main.js`.\n\nOptions: scripts path.\n\n## Installation\n\n```\nnpm install rbc-module-update --save-dev\n``` \n\n## Use\n\n ```\nvar rbcUpdate = require('rbc-module-update');\nrbcUpdate( 'paths.scripts.src' );\n```",
   "readmeFilename": "README.md",
-  "_id": "rbc-module-update@0.1.4",
-  "_from": "rbc-module-update@^0.1.4"
+  "_id": "rbc-module-update@0.1.7",
+  "_from": "rbc-module-update@^0.1.7"
 }
