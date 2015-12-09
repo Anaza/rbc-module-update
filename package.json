@@ -1,7 +1,7 @@
 {
   "name": "rbc-module-update",
   "description": "Update pages and widgets dependencies for browserify.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/Anaza/rbc-module-update",
   "author": {
     "name": "clexit, Anaza"

@@ -19,6 +19,7 @@ function updateWidgets( scriptsDirName ) {
         widgets = getDirs( scriptsDirName + '/widgets' );
 
     if ( widgets.length === 0 ) {
+        fs.writeFileSync( path.normalize(scriptsDirName+'/widgets/__main.js'), '' );
         return;
     }
 
